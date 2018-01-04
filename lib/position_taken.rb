@@ -5,7 +5,9 @@ def position_taken?(board, index)
     return false
   end
 
-  if value == "X" || value == ["O"] || value == ""
+  if value == "X" || value == ["O"]
       return true;
+  elsif value == ""
+      return false;
   end
 end
