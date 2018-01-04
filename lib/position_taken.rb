@@ -3,9 +3,9 @@ def position_taken?(board, index)
     value = board[index].strip
   elsif board[index] == nil
     return false
-  else
-    if value == "X" || value == ["O"] || value == ""
+  end
+
+  if value == "X" || value == ["O"] || value == ""
       return true;
-    end
   end
 end
